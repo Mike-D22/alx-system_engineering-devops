@@ -5,9 +5,10 @@
 
 import requests
 
+
 def top_ten(subreddit):
     """
-    Function that queries the Reddit API
+    Functions that queries the Reddit API
     - If not a valid subreddit, print None.
     """
     req = requests.get(
@@ -23,6 +24,3 @@ def top_ten(subreddit):
             print(title)
     else:
         print(None)
-
-# Example usage:
-# top_ten("python")
